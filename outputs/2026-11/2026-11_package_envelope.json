@@ -1,0 +1,74 @@
+{
+  "result": {
+    "period": "2026-11",
+    "company": "Lumina Streaming Co.",
+    "entities": [
+      "LuminaUS",
+      "LuminaEMEA",
+      "LuminaAPAC"
+    ],
+    "reconciliations_completed": 28,
+    "reconciliations_clean": 21,
+    "reconciliations_variance": 7,
+    "total_exceptions": 17,
+    "auto_investigate": 7,
+    "material": 6,
+    "trivial": 4,
+    "proposed_jes": 9,
+    "package_path": "outputs/2026-11/2026-11_Rec_Package.xlsx",
+    "exception_log_path": "outputs/2026-11/2026-11_Exception_Log.xlsx"
+  },
+  "_metadata": {
+    "agent": "rec-package",
+    "version": "0.1.0",
+    "run_timestamp": "2026-12-01T08:00:00Z",
+    "sources": [
+      {
+        "path": "data/synthetic/2026-11_GL_TrialBalance.xlsx",
+        "sha256": "0d2649cbffd85bd2"
+      },
+      {
+        "path": "data/synthetic/2026-11_LuminaUS_BankStatement_Operating.xlsx",
+        "sha256": "fc3c83fa201abf23"
+      },
+      {
+        "path": "data/synthetic/2026-11_LuminaUS_OutstandingItems.xlsx",
+        "sha256": "19c7abb89308ad41"
+      },
+      {
+        "path": "data/synthetic/2026-11_LuminaUS_AR_Aging.xlsx",
+        "sha256": "0bbb67024127d5f5"
+      },
+      {
+        "path": "data/synthetic/2026-11_LuminaUS_AP_Aging.xlsx",
+        "sha256": "c2ed02d0f67c5529"
+      },
+      {
+        "path": "data/synthetic/2026-11_Prepaid_Schedule.xlsx",
+        "sha256": "4c80e6de66247aab"
+      },
+      {
+        "path": "data/synthetic/2026-11_FixedAsset_Register.xlsx",
+        "sha256": "f3d3782acc0fb311"
+      },
+      {
+        "path": "data/synthetic/2026-11_Accrual_Schedule.xlsx",
+        "sha256": "171af58a72168b40"
+      },
+      {
+        "path": "data/synthetic/2026-11_DefRev_Schedule.xlsx",
+        "sha256": "20c46e048dd33856"
+      },
+      {
+        "path": "data/synthetic/2026-11_IC_Matrix.xlsx",
+        "sha256": "b7db0d6b517b81e9"
+      },
+      {
+        "path": "data/synthetic/2026-11_Lender_Statement.xlsx",
+        "sha256": "f48c8294de6dec41"
+      }
+    ],
+    "controller_signoff": null,
+    "cfo_signoff": null
+  }
+}
