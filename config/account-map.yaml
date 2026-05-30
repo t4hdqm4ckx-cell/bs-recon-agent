@@ -1,0 +1,39 @@
+# Chart of accounts — balance sheet accounts covered by this system
+# Matches Lumina Streaming Co. 6-digit COA
+
+assets:
+  cash:
+    - {code: "100100", name: "Cash - Operating",     entity: LuminaUS}
+    - {code: "100200", name: "Cash - Money Market",  entity: LuminaUS}
+  accounts_receivable:
+    - {code: "120100", name: "AR - Trade",           entity: LuminaUS}
+    - {code: "120200", name: "AR - Advertising",     entity: LuminaUS}
+  prepaids:
+    - {code: "130100", name: "Prepaid Insurance"}
+    - {code: "130200", name: "Prepaid Software"}
+    - {code: "130300", name: "Prepaid Rent"}
+    - {code: "130400", name: "Prepaid Marketing"}
+  fixed_assets:
+    - {code: "150100", name: "PP&E - Net"}
+    - {code: "150200", name: "Intangibles - Net"}
+
+liabilities:
+  accounts_payable:
+    - {code: "200100", name: "AP - Trade"}
+    - {code: "200200", name: "AP - Accrued"}
+  accrued_liabilities:
+    - {code: "210100", name: "Accrued Compensation"}
+    - {code: "210200", name: "Accrued Content"}
+    - {code: "210300", name: "Accrued Legal"}
+    - {code: "210400", name: "Accrued Marketing"}
+    - {code: "210500", name: "Other Accruals"}
+  deferred_revenue:
+    - {code: "220100", name: "Deferred Revenue - Subscription"}
+    - {code: "220200", name: "Deferred Revenue - Advertising"}
+  intercompany:
+    - {code: "230100", name: "IC Receivable - LuminaUS"}
+    - {code: "230200", name: "IC Payable - LuminaUS"}
+    - {code: "240100", name: "IC Receivable - LuminaEMEA"}
+    - {code: "240200", name: "IC Payable - LuminaEMEA"}
+  long_term_debt:
+    - {code: "300100", name: "Long-Term Debt"}

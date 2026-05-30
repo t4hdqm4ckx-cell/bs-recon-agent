@@ -1,0 +1,15 @@
+# Client data — never committed
+/data/client/*
+!/data/client/.gitkeep
+
+# Sensitive workpapers with sub-ledger detail
+**/subledger_detail*
+**/ar_detail*
+**/ap_detail*
+
+# Build artifacts
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.envrc

@@ -1,0 +1,36 @@
+# Balance sheet reconciliation thresholds
+# Calibrate per client — see docs/client-onboarding.md
+
+client: lumina-streaming
+
+materiality:
+  # Individual item thresholds
+  exception_amount_usd: 100000       # flag if > $100K
+  exception_age_days:   30           # flag if > 30 days old (either condition triggers)
+  auto_investigate_usd: 250000       # investigate immediately regardless of age
+  trivial_threshold_usd: 450000      # aggregate; items below need no commentary
+
+  # Aging buckets (days)
+  current_max_days:   30
+  aged_max_days:      60
+  at_risk_max_days:   90
+  # critical = 90+ days
+
+  # JE approval tiers
+  je_no_approval_usd:     10000      # < $10K: post with notation
+  je_controller_usd:     250000      # $10K–$250K: Controller approval
+  je_cfo_usd:           1000000      # $250K–$1M: CFO approval
+  # > $1M: CFO + Audit Committee
+
+rec_types:
+  bank:
+    outstanding_check_flag_days: 60  # flag outstanding checks > 60 days
+    deposit_in_transit_flag_days: 5  # flag DITs > 5 days
+  intercompany:
+    mismatch_flag_usd: 50000         # flag IC mismatches > $50K
+  ar:
+    aging_90_plus_flag_pct: 0.05     # flag if 90+ day AR > 5% of total AR
+  accruals:
+    stale_accrual_flag_days: 45      # flag accruals > 45 days without reversal
+  prepaids:
+    unamortized_variance_usd: 5000   # flag if schedule doesn't tie within $5K
